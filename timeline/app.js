@@ -2,7 +2,7 @@
     "use strict"
 
     // DOM elements
-    var listItems = document.querySelectorAll(".timeline li")
+    var listItems = document.querySelectorAll(".timeline-block-item")
 
     // check if an element is in viewport
     function isElementInViewport(el) {
@@ -23,9 +23,10 @@
             var el = listItems[i]
             if (isElementInViewport(el)) {
                 el.classList.add(className)
-            } else {
-                el.classList.remove(className)
             }
+            // else {
+            //     el.classList.remove(className)
+            // }
         }
     }
 
